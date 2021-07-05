@@ -1,0 +1,65 @@
+.team {
+  background-color: var(--portfolo-button);
+  letter-spacing: 0.03em;
+}
+.team__head {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.team__list {
+  display: flex;
+  justify-content: space-between;
+}
+.team__card {
+  background-color: var(--color-w);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team__description {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  line-height: 1.19;
+}
+.team__name {
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.team__function {
+  color: var(--color-text);
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+.team__link {
+  display: flex;
+  justify-content: space-between;
+  width: 206px;
+  margin: 0 auto;
+  fill: var(--color-icon);
+  & li:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+.team__icon {
+  display: flex;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  fill: var(--color-icon);
+  transition-property: fill, background;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic);
+
+  &:hover,
+  &:focus {
+    background: var(--color-link);
+    fill: var(--color-w);
+  }
+}

@@ -1,0 +1,29 @@
+.specifics {
+  display: flex;
+}
+.specifics__item:not(:last-child) {
+  margin-right: 30px;
+}
+.specifics__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  margin-bottom: 30px;
+  background: var(--portfolo-button);
+  border-radius: 4px;
+}
+.specifics__name {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+.specifics__description {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--color-text);
+}

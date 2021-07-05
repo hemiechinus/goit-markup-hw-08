@@ -1,0 +1,33 @@
+.work {
+  padding-bottom: 94px;
+}
+.work__header {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.work__list {
+  display: flex;
+}
+.work__item:not(:last-child) {
+  margin-right: 30px;
+}
+.work__card {
+  position: relative;
+  & img {
+    display: block;
+  }
+}
+.work__name {
+  background: rgba(47, 48, 58, 0.8);
+  color: var(--color-w);
+  text-transform: uppercase;
+  text-align: center;
+  padding: 27px 0px;
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+}

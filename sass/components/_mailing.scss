@@ -1,0 +1,54 @@
+.mailing {
+  margin-left: 93px;
+}
+.mailing__head {
+  margin-bottom: 20px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.mailing__form {
+  align-items: center;
+  display: flex;
+}
+.mailing__input {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  width: 358px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  background: inherit;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.mailing__button {
+  cursor: pointer;
+  background: var(--color-link);
+  color: var(--color-w);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  padding: 10px 22px;
+  margin-left: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0px;
+  transition-property: background;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic);
+  &:hover,
+  &:focus {
+    background: var(--modal-button);
+  }
+}
+.mailing__button svg {
+  margin-left: 10px;
+}
