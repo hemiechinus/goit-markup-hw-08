@@ -15,13 +15,11 @@
   </head>
 
   <body class="body">
-    <!--
     <header class="header">
       <div class="container header__container">
         <nav class="nav">
           <a class="logo" href="./index.html">
-            <span class="logo-web">Web</span>Studio</a> -->
-            <!--
+            <span class="logo-web">Web</span>Studio</a>
           <ul class="nav__list">
             <li class="nav__item nav__item--position">
               <a  class="nav__link nav__link--current link"  href="./index.html">Студия</a>
@@ -32,10 +30,8 @@
             <li class="nav__item nav__item--position">
               <a class="nav__link link" href="">Контакты</a>
             </li>
-          </ul> -->
-        <!--
-        </nav> -->
-        <!--
+          </ul>
+        </nav>
         <ul class="contacts">
           <li class="contacts__item">
             <a class="contacts__link" href="mailto:info@devstudio.com">
@@ -47,9 +43,9 @@
               <svg class="contacts__icon" width="10px" height="16px">
                 <use href="./images/sprite.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a>
           </li>
-        </ul> -->
-      <!--</div>
-    </header> -->
+        </ul>
+      </div>
+    </header>
     <main>
       <section class="banner section">
         <div class="container">
@@ -59,12 +55,10 @@
           </button>
         </div>
       </section>
-      <!--
       <section class="section">
         <div class="container">
-          <ul class="specifics"> -->
+          <ul class="specifics">
             <!--    <h2>почему мы</h2> -->
-            <!--
             <li class="specifics__item">
               <div class="specifics__icon">
                 <svg width="70" height="70">
@@ -116,8 +110,6 @@
           </ul>
         </div>
       </section>
-    -->
-      <!--
       <section class="work">
         <div class="container">
           <h2 class="work__header">Чем мы занимаемся</h2>
@@ -142,8 +134,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
-      <!--
+      </section>
       <section class="section team">
         <div class="container">
           <h2 class="team__head">Наша команда</h2>
@@ -348,8 +339,7 @@
           </ul>
         </div>
       </section>
-    </main> -->
-    <!--
+    </main>
     <footer class="footer">
       <div class="container footer__container">
         <div class="adress">
@@ -423,12 +413,11 @@
             </button>
           </form>
         </div>
-      </div> 
-    </footer> -->
+      </div>
+    </footer>
     <!--
     модальне вікно
 -->
-<!--
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
         <button data-modal-close class="modal__button">
@@ -487,8 +476,8 @@
           <button class="form__button" type="submit">Отправить</button>
         </form>
       </div>
-    </div> -->
+    </div>
     <!-- modal window-->
-    <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
