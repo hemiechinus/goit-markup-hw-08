@@ -294,7 +294,7 @@ summary {
   background-color: var(--color-w);
 }
 
-.conteiner {
+.container {
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -302,17 +302,17 @@ summary {
   width: 100%;
 }
 @media screen and (min-width: 480px) {
-  .conteiner {
+  .container {
     max-width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
-  .conteiner {
+  .container {
     max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .conteiner {
+  .container {
     max-width: 1200px;
   }
 }
@@ -323,6 +323,10 @@ summary {
   align-items: center;
 }
 */
+.section {
+  padding: 94px 0;
+}
+
 .specifics {
   list-style: none;
 }
