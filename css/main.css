@@ -294,38 +294,23 @@ summary {
   background-color: var(--color-w);
 }
 
-/*
-@media screen and(min-width:480px) {
-  max-width: 767px;
-}
-@media screen and(min-width:786px) {
-  max-width: 1199px;
-}
-@media screen and(min-width:1200px) {
-  max-width: 1600px;
-}
-/*
-max-width: 1600px;
-*/
-.container {
+.conteiner {
+  margin: 0 auto;
+  padding: 0 15px;
   width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
 }
 @media screen and (min-width: 480px) {
-  .container {
+  .conteiner {
     max-width: 480px;
   }
 }
-@media screen and (min-width: 786px) {
-  .container {
-    max-width: 786px;
+@media screen and (min-width: 768px) {
+  .conteiner {
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .container {
+  .conteiner {
     max-width: 1200px;
   }
 }
@@ -337,29 +322,34 @@ max-width: 1600px;
 }
 */
 .section {
-  padding-bottom: 60px;
-  padding-top: 60px;
+  padding: 94px 0;
 }
 
 .specifics {
-  margin-bottom: -30px;
+  list-style: none;
 }
 @media screen and (min-width: 768px) {
   .specifics {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -30px;
   }
 }
 
-.specifics__item {
-  width: 100%;
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .specifics__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 @media screen and (min-width: 768px) {
   .specifics__item {
-    flex-basis: calc((100%-60px) / 2);
-    margin-left: 30px;
+    flex-basis: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .specifics__item {
+    flex-basis: calc((100% - 120px) / 4);
+    margin: 15px;
   }
 }
 
@@ -374,7 +364,6 @@ max-width: 1600px;
 }
 
 .specifics__name {
-  text-align: center;
   margin-bottom: 10px;
   text-transform: uppercase;
   font-weight: bold;
@@ -388,4 +377,14 @@ max-width: 1600px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--color-text);
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*
+@import "./layout/work";
+@import "./layout/team";
+@import "./layout/client";
+@import "./layout/footer";
+@import "./components/port-filter";
+@import "./layout/grid";
+@import "./components/modal";
+@import "./components/checkbox";*//*# sourceMappingURL=main.css.map */
