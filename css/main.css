@@ -391,9 +391,169 @@ summary {
   color: var(--color-text);
 }
 
+.work {
+  padding-bottom: 94px;
+}
+@media screen and (max-width: 1199px) {
+  .work {
+    display: none;
+  }
+}
+
+.work__header {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.work__list {
+  display: flex;
+}
+
+.work__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.work__card {
+  position: relative;
+}
+.work__card img {
+  display: block;
+}
+
+.work__name {
+  background: rgba(47, 48, 58, 0.8);
+  color: var(--color-w);
+  text-transform: uppercase;
+  text-align: center;
+  padding: 27px 0px;
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+}
+
+.team {
+  background-color: var(--portfolo-button);
+  letter-spacing: 0.03em;
+}
+
+.team__head {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .team__head {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
+}
+
+.team__list {
+  margin-left: -30px;
+  margin-bottom: -30px;
+}
+@media screen and (min-width: 768px) {
+  .team__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.team__card {
+  background-color: var(--color-w);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .team__card:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team__card {
+    flex-basis: calc((100% - 60px) / 2);
+    margin-bottom: 30px;
+    margin-left: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__card {
+    flex-basis: calc((100% - 120px) / 4);
+  }
+}
+
+.team__img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+.team__description {
+  padding-top: 30px;
+  padding-bottom: 24px;
+  text-align: center;
+  line-height: 1.19;
+}
+@media screen and (min-width: 1200px) {
+  .team__description {
+    padding-bottom: 30px;
+  }
+}
+
+.team__name {
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.team__function {
+  color: var(--color-text);
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.team__link {
+  display: flex;
+  justify-content: space-between;
+  width: 206px;
+  margin: 0 auto;
+  fill: var(--color-icon);
+}
+.team__link li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.team__icon {
+  display: flex;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  fill: var(--color-icon);
+  transition-property: fill, background;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic);
+}
+.team__icon:hover, .team__icon:focus {
+  background: var(--color-link);
+  fill: var(--color-w);
+}
+
 /*
-@import "./layout/work";
-@import "./layout/team";
 @import "./layout/client";
 @import "./layout/footer";
 @import "./components/port-filter";
