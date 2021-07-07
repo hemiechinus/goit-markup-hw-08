@@ -11,6 +11,21 @@
     color: var(--color-w);
     padding: 118px 0px;
   }
+  @media (min-device-pixel-ratio: 2) and (max-width: 767px),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background: var(--color-banner);
+    max-width: 767px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/mobile/Header2x.jpg");
+    color: var(--color-w);
+    padding: 118px 0px;
+  }
 
   @media screen and (min-width: 768px) {
     background: var(--color-banner);
@@ -24,6 +39,21 @@
     color: var(--color-w);
     padding: 118px 0px;
   }
+  @media (min-device-pixel-ratio: 2) and (min-width: 768px),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background: var(--color-banner);
+    max-width: 1199px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/table/Header2x.jpg");
+    color: var(--color-w);
+    padding: 118px 0px;
+  }
   @media screen and (min-width: 1200px) {
     background: var(--color-banner);
     max-width: 1600px;
@@ -33,6 +63,21 @@
         rgba(47, 48, 58, 0.4)
       ),
       url("../images/desc/header1x.jpg");
+    color: var(--color-w);
+    padding: 200px 0px;
+  }
+  @media (min-device-pixel-ratio: 2) and (min-width: 1200px),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background: var(--color-banner);
+    max-width: 1600px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/desc/header2x.jpg");
     color: var(--color-w);
     padding: 200px 0px;
   }
