@@ -295,8 +295,10 @@ summary {
 }
 
 .conteiner {
-  margin: 0 auto;
-  padding: 0 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
 }
 @media screen and (min-width: 480px) {
@@ -321,10 +323,6 @@ summary {
   align-items: center;
 }
 */
-.section {
-  padding: 94px 0;
-}
-
 .specifics {
   list-style: none;
 }
