@@ -2,14 +2,30 @@
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+  @media screen and(max-width:767px) {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin-bottom: 40px;
+  }
+  @media screen and(min-width:768px) and(max-width:1199px) {
+    margin-bottom: 40px;
+  }
 }
 .filter__item {
   background-color: var(--portfolo-button);
   border-radius: 4px;
-  &:not(:first-child) {
-    margin-left: 8px;
+  @media screen and(min-width:768px) {
+    &:not(:first-child) {
+      margin-left: 8px;
+    }
+  }
+  @media screen and(max-width:767px) {
+    margin-right: 8px;
+    margin-bottom: 15px;
   }
 }
+
 .filter__button {
   cursor: pointer;
   background-color: var(--portfolo-button);

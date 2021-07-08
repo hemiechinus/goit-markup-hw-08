@@ -1,16 +1,32 @@
 .grid {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
   list-style: none;
+  @media screen and(min-width:768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+  @media screen and(min-width:1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
 }
 .grid__item {
-  width: 370px;
   cursor: pointer;
-  margin-left: 30px;
-  margin-top: 30px; /*
-  flex-basis: cacl((1200- 90px)/3); */
+  @media screen and(min-width:768px) {
+    width: 354px;
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc((100% - 60px) / 2);
+  }
+  @media screen and(min-width:1200px) {
+    width: 370px;
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc((100% - 90px) / 3);
+  }
 }
 .grid__link {
   display: block;
@@ -22,6 +38,18 @@
 }
 .grid__image {
   display: block;
+  @media screen and (max-width: 767px) {
+    width: 450px;
+    height: 294px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    height: 294px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+    height: 294px;
+  }
 }
 .grid__box {
   padding: 20px 24px;

@@ -5,20 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфолио</title>
-    <!-- 
-          <link rel="stylesheet" href="./css/modern-normalize.css" />
-    
-        -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 <body class="body">
    <header class="header header--border">
     <div class="container header__container">
+    <a class="logo" href="./index.html"><span class="logo-web">Web</span>Studio</a>
     <nav class="nav">
-        <a class="logo" href="./index.html"><span class="logo-web">Web</span>Studio</a>
         <ul class="nav__list">
             <li class="nav__item nav__item--position">
                 <a class="nav__link  link " href="./index.html">Студия</a>
@@ -45,6 +40,11 @@
                 </svg>+38 096 111 11 11</a>
         </li>
     </ul>
+    <button class="header__button header__button--open menu-open" type="button">
+        <svg class="header__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+            <use class="header__icon--open" href="./images/sprite.svg#icon-menu"></use>
+        </svg>
+    </button>
     </div>
    </header>
    <main>
@@ -183,15 +183,20 @@
         </div>
        </section>
    </main>
-<footer class="footer">
+    <footer class="footer">
     <div class="container footer__container">
         <div class="adress">
-            <a class="logo" href="./index.html"><span class="logo-web">Web</span>Studio</a>
+            <a class="logo" href="./index.html">
+                <span class="logo-web">Web</span>Studio</a>
             <address class="adress__item">
                 <p class="adress__name">г. Киев, пр-т Леси Украинки, 26</p>
                 <ul class="adress__list">
-                    <li><a class="link footer__link" href="mailto:info@example.com">info@example.com</a></li>
-                    <li><a class="link footer__link" href="tel:+380991111111">+38 099 111 11 11</a></li>
+                    <li>
+                        <a class="link footer__link" href="mailto:info@example.com">info@example.com</a>
+                    </li>
+                    <li>
+                        <a class="link footer__link" href="tel:+380991111111">+38 099 111 11 11</a>
+                    </li>
                 </ul>
             </address>
         </div>
@@ -234,7 +239,8 @@
                 <label>
                     <input class="mailing__input" type="email" name="email" placeholder="E-mail" />
                 </label>
-                <button class="mailing__button" type="submit">Подписаться
+                <button class="mailing__button" type="submit">
+                    Подписаться
                     <svg width="24px" height="24px">
                         <use href="./images/sprite.svg#icon-send"></use>
                     </svg>
@@ -242,6 +248,6 @@
             </form>
         </div>
     </div>
-</footer>
+    </footer>
 </body>
 </html>
