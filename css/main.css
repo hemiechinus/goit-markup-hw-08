@@ -328,9 +328,16 @@ summary {
 
 .logo {
   font-family: "Raleway";
-  font-size: 26px;
-  line-height: 1.17;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.67;
   letter-spacing: 0.03em;
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .logo-web {
@@ -354,6 +361,11 @@ summary {
 .nav {
   display: flex;
   align-items: center;
+}
+@media screen and (max-wdth: 767px) {
+  .nav {
+    display: none;
+  }
 }
 
 .nav__list {
@@ -389,18 +401,33 @@ summary {
 
 /**/
 .contacts {
-  display: flex;
-  margin-left: auto;
   fill: var(--color-text);
+  margin-left: auto;
 }
-.contacts__item:not(:first-child) {
-  margin-left: 50px;
+@media screen and (max-wdth: 767px) {
+  .contacts {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: flex;
+  }
+  .contacts__item:not(:first-child) {
+    margin-left: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 
 .contacts__link {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--color-text);
   transition-property: color, fill;
@@ -410,6 +437,12 @@ summary {
 .contacts__link:hover, .contacts__link:focus {
   color: var(--color-link);
   fill: var(--color-link);
+}
+@media screen and (min-width: 1200px) {
+  .contacts__link {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
 .contacts__icon {
