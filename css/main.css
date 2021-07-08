@@ -602,6 +602,7 @@ summary {
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
+    margin-bottom: -30px;
   }
 }
 
@@ -614,6 +615,7 @@ summary {
   .specifics__item {
     flex-basis: calc((100% - 60px) / 2);
     margin-left: 30px;
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1433,7 +1435,7 @@ summary {
 }
 @media screen and (max-width: 767px) {
   .grid__image {
-    width: 450px;
+    width: 100%;
     height: 294px;
   }
 }
