@@ -32,11 +32,15 @@
   transition-timing-function: var(--cubic);
 }
 .checkbox__agreement {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--color-text);
   padding-left: 8.38px;
+  @media screen and(min-width:1200px) {
+  font-size: 14px;
+  line-height: 1.71;
+  }
 }
 .checkbox__link {
   color: var(--color-link);

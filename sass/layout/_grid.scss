@@ -15,6 +15,11 @@
 }
 .grid__item {
   cursor: pointer;
+  @media screen and (max-width: 767px) {
+    &:not(:last-child){
+    margin-bottom: 30px;
+  }
+  }
   @media screen and(min-width:768px) {
     width: 354px;
     margin-left: 30px;
