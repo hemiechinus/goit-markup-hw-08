@@ -1536,10 +1536,8 @@ summary {
 }
 @media screen and (max-width: 767px) {
   .modal {
-    width: 100%;
+    width: 92%;
     height: 609px;
-    margin-left: 15px;
-    margin-right: 15px;
   }
 }
 @media screen and (min-width: 768px) {
