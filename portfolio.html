@@ -40,9 +40,12 @@
                 </svg>+38 096 111 11 11</a>
         </li>
     </ul>
-    <button class="header__button header__button--open menu-open" type="button">
-        <svg class="header__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
-            <use class="header__icon--open" href="./images/sprite.svg#icon-menu"></use>
+    <button class="header__button" type="button" menu-open>
+        <svg 
+          class="header__icon"
+           width="40" height="40"
+           aria-label="Переключатель мобильного меню">
+        <use href="./images/sprite.svg#icon-menu"></use>
         </svg>
     </button>
     </div>
@@ -316,5 +319,55 @@
         </div>
     </div>
     </footer>
+<!--  Мобільне меню   -->
+<div mobile-menu class="mobile is-hidden">
+    <div class="container">
+        <button class="mobile__button" type="button" menu-close>
+            <svg class="mobile__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+                <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+        </button>
+        <nav>
+            <ul class="mobile__list">
+                <li class="mobile__item">
+                    <a class="mobile__link" href="./index.html">Студия</a>
+                </li>
+                <li class="mobile__item">
+                    <a class="mobile__link" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="mobile__item">
+                    <a class="mobile__link" href="">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="mobile-nav__bottom">
+            <ul class="mobile-contacts">
+                <li class="mobile-contacts__item">
+                    <a class="mobile-contacts__link mobile-contacts__link--tel" href="+38 096 111 11 11">+38 096 111 11
+                        11</a>
+                </li>
+                <li class="mobile-contacts__item">
+                    <a class="mobile-contacts__link mobile-contacts__link--mail"
+                        href="info@devstudio.com">info@devstudio.com</a>
+                </li>
+            </ul>
+            <ul class="mobile-social">
+                <li class="mobile-social__item">
+                    <a href="" class="mobile-social__link">Instagram</a>
+                </li>
+                <li class="mobile-social__item">
+                    <a href="" class="mobile-social__link">Twitter</a>
+                </li>
+                <li class="mobile-social__item">
+                    <a href="" class="mobile-social__link">Facebook</a>
+                </li>
+                <li class="mobile-social__item">
+                    <a href="" class="mobile-social__link">LinkedIn</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--  MOBILE MENU  -->
+<script src="./js/menu.js"></script>
 </body>
 </html>
