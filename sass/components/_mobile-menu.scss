@@ -58,11 +58,17 @@
   letter-spacing: 0.02em;
   text-decoration: none;
   &--tel {
+    @media screen and(max-width:370px) {
+      font-size: 27px;
+    }
     font-size: 34px;
     line-height: 1.176;
     color: var(--color-link);
   }
   &--mail {
+    @media screen and(max-width:370px) {
+      font-size: 20px;
+    }
     font-size: 24px;
     line-height: 1.17;
     color: var(--color-text);
@@ -71,15 +77,32 @@
 .mobile-social {
   display: flex;
   padding-top: 64px;
+  @media screen and(max-width:425px) {
+    flex-wrap: wrap;
+  }
 }
 .mobile-social__item {
   position: relative;
+  @media screen and(max-width:425px) {
+    margin-bottom: 10px;
+  }
 }
 .mobile-social__item:not(:first-child) {
   margin-left: 10px;
 }
 .mobile-social__item:not(:last-child) {
   margin-right: 10px;
+}
+
+.mobile-social__item:not(:last-child)::before {
+  display: block;
+  content: "";
+  width: 0;
+  height: 22px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  position: absolute;
+  bottom: 0;
+  right: -10px;
 }
 .mobile-social__item:not(:last-child)::before {
   display: block;
