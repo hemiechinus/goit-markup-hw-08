@@ -31,6 +31,10 @@
   position: absolute;
   right: 25px;
   top: 21px;
+  &:hover,
+  &:focus {
+    fill: var(--color-link);
+  }
 }
 .mobile__item {
   margin-bottom: 32px;

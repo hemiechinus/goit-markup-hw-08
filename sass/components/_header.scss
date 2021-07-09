@@ -32,6 +32,10 @@
   padding: 0;
   border: 0;
   background-color: transparent;
+  &:hover,
+  &:focus {
+    fill: var(--color-link);
+  }
 }
 .link {
   font-weight: 500;

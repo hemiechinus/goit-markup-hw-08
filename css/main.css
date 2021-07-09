@@ -368,6 +368,9 @@ summary {
     display: none;
   }
 }
+.header__button:hover, .header__button:focus {
+  fill: var(--color-link);
+}
 
 .link {
   font-weight: 500;
@@ -949,6 +952,9 @@ summary {
   position: absolute;
   right: 25px;
   top: 21px;
+}
+.mobile__button:hover, .mobile__button:focus {
+  fill: var(--color-link);
 }
 
 .mobile__item {
