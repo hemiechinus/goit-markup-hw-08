@@ -985,18 +985,13 @@ summary {
 }
 @media screen and (max-width: 370px) {
   .mobile-contacts__link--tel {
-    font-size: 27px;
+    font-size: 8.5vw;
   }
 }
 .mobile-contacts__link--mail {
   font-size: 24px;
   line-height: 1.17;
   color: var(--color-text);
-}
-@media screen and (max-width: 370px) {
-  .mobile-contacts__link--mail {
-    font-size: 20px;
-  }
 }
 
 .mobile-social {
