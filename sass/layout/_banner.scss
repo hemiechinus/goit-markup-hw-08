@@ -1,87 +1,53 @@
 .banner {
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--color-w);
+  background: var(--color-banner);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 400px;
   @media screen and (max-width: 767px) {
-    background: var(--color-banner);
-    max-width: 767px;
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
+    background-image: linear-gradient(to right,var(--hero-gradient), var(--hero-gradient)),
       url("../images/mobile/Header1x.jpg");
-    color: var(--color-w);
-    padding: 118px 0px;
-  }
-  @media (min-device-pixel-ratio: 2) and (max-width: 767px),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background: var(--color-banner);
     max-width: 767px;
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
+    padding: 118px 0px;
+  @media (min-device-pixel-ratio:2),
+    (-webkit-min-device-pixel-ratio:2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(to right,var(--hero-gradient), var(--hero-gradient)),
       url("../images/mobile/Header2x.jpg");
-    color: var(--color-w);
-    padding: 118px 0px;
   }
-
+  }
   @media screen and (min-width: 768px) {
-    background: var(--color-banner);
-    max-width: 1199px;
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
+    background-image: linear-gradient(to right,var(--hero-gradient), var(--hero-gradient)),
       url("../images/table/Header1x.jpg");
-    color: var(--color-w);
-    padding: 118px 0px;
-  }
-  @media (min-device-pixel-ratio: 2) and (min-width: 768px),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background: var(--color-banner);
     max-width: 1199px;
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url("../images/table/Header2x.jpg");
-    color: var(--color-w);
     padding: 118px 0px;
-  }
-  @media screen and (min-width: 1200px) {
-    background: var(--color-banner);
-    max-width: 1600px;
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url("../images/desc/header1x.jpg");
-    color: var(--color-w);
-    padding: 200px 0px;
-  }
-  @media (min-device-pixel-ratio: 2) and (min-width: 1200px),
+    @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background: var(--color-banner);
-    max-width: 1600px;
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url("../images/desc/header2x.jpg");
-    color: var(--color-w);
-    padding: 200px 0px;
+    background-image: linear-gradient(to right,var(--hero-gradient), var(--hero-gradient)),
+      url("../images/table/Header2x.jpg");
   }
 }
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(to right,var(--hero-gradient), var(--hero-gradient)),
+      url("../images/desc/header1x.jpg");
+    max-width: 1600px;
+    height: 600px;
+    padding: 200px 0px;
+    @media (min-device-pixel-ratio:2),
+    (-webkit-min-device-pixel-ratio:2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(to right,var(--hero-gradient), var(--hero-gradient)),
+      url("../images/desc/header2x.jpg");
+    }
+  }
+  
 .banner__title {
   text-transform: uppercase;
   font-weight: 900;

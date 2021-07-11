@@ -2,8 +2,14 @@
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
-  @media screen and(max-width:767px) {
+  @media screen and(max-width:379px) {
     width: 100%;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 380px) and(max-width:767px) {
+    width: 362px;
     flex-wrap: wrap;
     justify-content: start;
     margin-bottom: 40px;
@@ -26,6 +32,11 @@
   }
 }
 
+.filter__item:nth-child(2n + 3) {
+  @media screen and (min-width: 380px) and(max-width:767px) {
+    margin-right: 0px;
+  }
+}
 .filter__button {
   cursor: pointer;
   background-color: var(--portfolo-button);
