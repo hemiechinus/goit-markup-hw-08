@@ -499,6 +499,9 @@ summary {
   color: var(--color-w);
   background: var(--color-banner);
   height: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 @media screen and (max-width: 767px) {
   .banner {
