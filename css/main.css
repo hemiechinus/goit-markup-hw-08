@@ -502,29 +502,29 @@ summary {
 }
 @media screen and (max-width: 767px) {
   .banner {
-    background-image: linear-gradient(to right, var(--hero-gradient), var(--hero-gradient)), url("../images/mobile/Header1x.jpg");
+    background-image: linear-gradient(to right, var(--hero-gradient), var(--hero-gradient)), url("../images/mobile/hero.jpg");
     padding: 118px 0px;
   }
 }
 @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .banner {
-    background-image: linear-gradient(to right, var(--hero-gradient), var(--hero-gradient)), url("../images/mobile/Header2x.jpg");
+    background-image: linear-gradient(to right, var(--hero-gradient), var(--hero-gradient)), url("../images/mobile/hero@2x.jpg");
   }
 }
 @media screen and (min-width: 768px) {
   .banner {
-    background-image: linear-gradient(to right, var(--hero-gradient), var(--hero-gradient)), url("../images/table/Header1x.jpg");
+    background-image: linear-gradient(to right, var(--hero-gradient), var(--hero-gradient)), url("../images/table/hero-tablet.jpg");
     padding: 118px 0px;
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .banner {
-    background-image: linear-gradient(to right, var(--hero-gradient), var(--hero-gradient)), url("../images/table/Header2x.jpg");
+    background-image: linear-gradient(to right, var(--hero-gradient), var(--hero-gradient)), url("../images/table/hero-tablet@2x.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
   .banner {
-    background-image: linear-gradient(to right, var(--hero-gradient), var(--hero-gradient)), url("../images/desc/header1x.jpg");
+    background-image: linear-gradient(to right, var(--hero-gradient), var(--hero-gradient)), url("../images/desc/hero-desc.jpg");
     max-width: 1600px;
     height: 600px;
     padding: 200px 0px;
@@ -532,7 +532,7 @@ summary {
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .banner {
-    background-image: linear-gradient(to right, var(--hero-gradient), var(--hero-gradient)), url("../images/desc/header2x.jpg");
+    background-image: linear-gradient(to right, var(--hero-gradient), var(--hero-gradient)), url("../images/desc/hero-desc@2x.jpg");
   }
 }
 
